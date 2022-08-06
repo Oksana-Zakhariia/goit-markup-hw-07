@@ -1,14 +1,10 @@
 .benefits__section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @extend%section;
     display: flex;
 }
 
 .benefits__container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    @extend%container;
 }
 
 .benefits__title {
@@ -32,11 +28,9 @@
 
 
 .benefits__text-list {
-    margin: 0;
-    padding: 0;
+    @extend%reset-list;
     display: flex;
-    list-style: none;
-}
+    }
 
 .benefits__item {
     display: block;

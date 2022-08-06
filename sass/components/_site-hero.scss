@@ -14,13 +14,10 @@
 }
 
 .site-hero__container {
+    @extend%container;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
 }
 
 .site-hero__title {
@@ -36,19 +33,17 @@
 }
 
 .site-hero__button {
+    @extend%button ;
     color: $white-color;
     background-color: $accent-color;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
     font-family: inherit;
-    cursor: pointer;
     letter-spacing: 0.06em;
     display: inline-block;
     min-width: 200px;
-    padding: 10px 32px;
-    text-align: center;
-    border-radius: 4px;
+    padding: 10px 32px; 
     border: none;
     margin-top: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);

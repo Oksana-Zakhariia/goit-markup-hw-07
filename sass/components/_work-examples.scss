@@ -4,10 +4,7 @@
 }
 
 .work__container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    @extend%container;
 }
 
 .work__title {
@@ -21,10 +18,8 @@
 }
 
 .work__list {
+    @extend%reset-list;
     display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 .work__item {

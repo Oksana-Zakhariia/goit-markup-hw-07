@@ -1,13 +1,9 @@
 .client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @extend%section;
 }
 
 .client__container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    @extend%container;
 }
 
 .client__title {
@@ -20,10 +16,8 @@
 }
 
 .clients__list {
+@extend%reset-list; 
 display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
 }
 
 .client__item:not(:last-child) {

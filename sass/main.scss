@@ -1,5 +1,7 @@
 @import"./variables";
-@import"./utils/local-styles";
+@import"./base/reset";
+@import"./utils/visually-hidden";
+@import"./utils/placeholders";
 @import"./components/header" ;
 @import"./components/logo" ;
 @import"./components/site-nav" ;
@@ -13,7 +15,7 @@
 @import"./components/footer";
 @import"./components/footer-form";
 @import"./components/portfolio";
-@import"./components/project"
+@import"./components/project";
 
 
 

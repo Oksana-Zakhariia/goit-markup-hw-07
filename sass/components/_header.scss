@@ -3,10 +3,7 @@
 }
 
 .site-header__container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    @extend%container;
     display: flex;
     align-items: center;
 }
@@ -25,12 +22,10 @@
 }
 
 .site-header__contacts {
+    @extend%reset-list;
     display: flex;
-    margin: 0;
     margin-left: auto;
     color: $primary-text;
-    list-style: none;
-    padding-left: 0;
     }
 
 .site-header__contact {

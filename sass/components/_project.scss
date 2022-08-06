@@ -1,11 +1,9 @@
 .project__list{
+ @extend%reset-list;
 display: flex;
 flex-wrap: wrap;
-margin: 0;
-padding: 0;
 margin-right: -30px;
 margin-bottom: -30px;
-list-style: none;
 }
 .project{
 margin-right: 30px;
@@ -20,11 +18,6 @@ transition: box-shadow 250ms $timing-function;
 &:focus{box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-}
-.project__link:hover .project__overlay,
-.project__link:focus .project__overlay{
-    opacity: 1;
-    transform: translateY(0);
 }
 .project__thumb{
 position: relative;
@@ -42,8 +35,12 @@ overflow: hidden;
     transition: transform 250ms $timing-function,
     opacity 250ms $timing-function;
     transform: translateY(100%);
-
-
+    
+    .project__link:hover &,
+    .project__link:focus &{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .project__cover{
     padding: 63px 24px;
