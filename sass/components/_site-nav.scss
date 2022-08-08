@@ -36,7 +36,7 @@
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--accent-color);
+    color: $accent-color;
     &::after{content: "";
         position: absolute;
         bottom: 0;
