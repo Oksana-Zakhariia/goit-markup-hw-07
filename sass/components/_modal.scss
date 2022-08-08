@@ -57,7 +57,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $timing-function;
     &:hover,
     &:focus{
         fill: $accent-color;
@@ -97,7 +97,7 @@
     left: 12px;
     top: 11px;
     fill: $title-text-color;
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $timing-function;
 }
 
 .modal__input {
